@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <title>Ejercicio Formulario</title>
@@ -10,34 +11,87 @@
         }
     </style>
 </head>
-<body>
-<!--Cree un Formulario con los campos que se proponen a continuacion-->
-<!--Agregue el atributo legend-->
 
-<!--Si tienes dudas de como hacer un formulario, puedes consultar:
+<body>
+    <!--Cree un Formulario con los campos que se proponen a continuacion-->
+    <!--Agregue el atributo legend-->
+
+    <!--Si tienes dudas de como hacer un formulario, puedes consultar:
     https://www.w3schools.com/html/tryit.asp?filename=tryhtml_elem_output-->
 
-<h3>Suscribase a Nuestro Portal de Noticias! Crear una cuenta es rápido!</h3>
-Nombre:
-Apellido:
-Sexo: Masculino Femenino
-Edad:
-Email:
-Usuario:
-Password:
-Confirmar Password:
-
-Tipo de servicio: Free / Standard / Premium
-Tema:
-Política
-Negocios
-Tecnología
-Salud
-
-Agregue un comentario:
-
-Boton de Enviar
-
+    <h3>Suscribase a Nuestro Portal de Noticias! Crear una cuenta es rápido!</h3>
+    <form>
+        <p>
+            <label for="nombre">Nombre: </label>
+            Nombre: <input type="text" name="Nombre" id="nombre" placeholder="Ingrese su nombre">
+        </p>
+        <p>
+            <label for="apellido">Apellido: </label>
+            Apellido: <input type="text" name="Apellido" id="apellido" placeholder="Ingrese su apellido">
+        </p>
+        <p>
+            Sexo:
+            <br>
+            <label for="masculino">Masculino: </label>
+            Masculino <input type="radio" name="Sexo" value="masculino" id="masculino">
+            <br>
+            <label for="femenino">Femenino: </label>
+            Femenino <input type="radio" name="Sexo" value="femenino" id="femenino">
+        </p>
+        <p>
+            <label for="edad">Edad: </label>
+            Edad: <input type="number" name="edad" id="edad" placeholder="Ingrese edad">
+        </p>
+        <p>
+            <label for="email">Email: </label>
+            Email: <input type="email" name="email" id="email" placeholder="Ingrese su email">
+        </p>
+        <p>
+            <label for="usuario">Usuario: </label>
+            Usuario: <input type="text" name="usuario" id="usuario" placeholder="Ingrese su usuario">
+        </p>
+        <p>
+            <label for="password">Password: </label>
+            Password: <input type="password" name="password" id="password" placeholder="Ingrese una contraseña">
+        </p>
+        <p>
+            <label for="confirmar password">Password2: </label>
+            Confirmar Password: <input type="password" name="password2" id="confirmar password"
+                placeholder="Ingrese nuevamente la contraseña">
+        </p>
+        <p>
+            Tipo de servicio:
+            <label for="tipo_servicio">Tipo de servicio: </label>
+            <select name="tipo_servicio" id="tipo_servicio">
+                <option value="free">Free</option>
+                <option value="standard">Standard</option>
+                <option value="premium">Premium</option>
+            </select>
+        </p>
+        <p>
+            Tema:
+            <br>
+            <label for="politica">Politica: </label>
+            Política <input type="checkbox" name="politica" value="politica" id="politica">
+            <br>
+            <label for="negocios">Negocions: </label>
+            Negocios <input type="checkbox" name="negocios" value="negocios" id="negocios">
+            <br>
+            <label for="tecnologia">Tecnologia: </label>
+            Tecnología <input type="checkbox" name="tecnologia" value="tecnologia" id="tecnologia">
+            <br>
+            <label for="salud">Salud: </label>
+            Salud<input type="checkbox" name="salud" value="salud" id="salud">
+        </p>
+        <p>
+            Agregue un comentario:
+            <textarea> </textarea>
+        </p>
+        <p>
+            <button type="button">Boton de Enviar</button>
+        </p>
+    </form>
 
 </body>
+
 </html>
